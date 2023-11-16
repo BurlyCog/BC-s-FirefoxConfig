@@ -1,0 +1,238 @@
+.titlebar-buttonbox-container{ margin-left: 40px !important }
+:root {
+  --uei-icon-size: 16px !important;
+}
+
+#unified-extensions-view > .panel-header {
+  display: none !important;
+}
+
+#unified-extensions-view > .panel-header + toolbarseparator {
+  border: none !important;
+  margin: 0 0 var(--arrowpanel-menuitem-margin-inline) !important;
+}
+
+#unified-extensions-panel .unified-extensions-item {
+  margin-block: 0 !important;
+}
+
+.unified-extensions-item-message-deck {
+  display: none;
+}
+
+.unified-extensions-item-menu-button.subviewbutton {
+  list-style-image: url("chrome://global/skin/icons/more.svg") !important;
+  padding: 0 0 0 var(--arrowpanel-menuitem-margin-inline) !important;
+}
+
+.unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon {
+  border: none !important;
+}
+
+/*================ GLOBAL COLORS ================*/
+:root {
+	--accent-color: 54, 54, 54;
+	--secondary-accent-color: 140, 140, 140;
+	--third-accent-color: 190, 190, 190;
+	--light-color: 255, 255, 255;
+	--dark-color: 31, 31, 31;
+	--caption-min-color: 245, 245, 245;
+	--caption-max-color: 245, 245, 245;
+	--caption-close-color: 245, 245, 245;
+}
+
+/* Remove close button*/ .titlebar-buttonbox-container{ display:none } 
+
+  :root {
+	--navbarWidth     : 360px; /* Set width of navbar. Use px for a fixed width 
+								  or vw for a percentage of your window. */
+	--animationSpeed  : 0.15s;
+  }
+   
+
+/*  Removes flash before loading pages  */
+:root{--tabpanel-background-color: var(--toolbar-field-background-color) !important}
+
+/*  Fixes the customization page  */
+#customization-panelWrapper {max-width: 30em!important}
+
+/*  Removes annoying buttons and spaces */
+#firefox-view-button, #save-to-pocket-button, #tracking-protection-icon-container, .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"]{display: none !important}
+#tabbrowser-tabs{border-inline-start-width: 0!important}
+
+/* This style hides the main toolbar and shows it when the cursor is over the tabs toolbar as well as whenever the focus is inside nav-bar, such as when urlbar is focused. */
+
+:root{ --uc-navbar-transform: -40px }
+:root[uidensity="compact"]{ --uc-navbar-transform: -34px }
+
+#navigator-toolbox > div{ display: contents; }
+:root[sessionrestored] :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
+  transform: translateY(var(--uc-navbar-transform))
+}
+:root:is([customizing],[chromehidden*="toolbar"]) :where(#nav-bar,#PersonalToolbar,#tab-notification-deck,.global-notificationbox){
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+#nav-bar:not([customizing]){
+  opacity: 0;
+  transition:  transform 500ms ease 1s, opacity 200ms ease 0.5s !important;
+  position: relative;
+  z-index: 2;
+}
+#TabsToolbar{ position: relative; z-index: 3 }
+
+/* Show when toolbox is focused, like when urlbar has received focus */
+#navigator-toolbox:focus-within > .browser-toolbar{
+  transform: translateY(0);
+  opacity: 1;
+  transition-duration: 100ms, 100ms !important;
+  transition-delay: 0s !important;
+}
+/* Show when toolbox is hovered */
+#titlebar:hover ~ .browser-toolbar,
+#nav-bar:hover,
+#nav-bar:hover + #PersonalToolbar{
+  transform: translateY(0);
+  opacity: 1;
+  transition-duration: 100ms, 100ms !important;
+  transition-delay: 0s !important;
+}
+
+/* Bookmarks toolbar needs so extra rules */
+#PersonalToolbar{ transition: transform 400ms ease 1.8s !important; position: relative; z-index: 1 }
+
+/* Move up the content view */
+:root[sessionrestored]:not([inFullscreen]) > body > #browser{ margin-top: var(--uc-navbar-transform); }
+
+/*
+   Hide Extension Name in the identity area unless
+   hovered for half a second (updated for Fx80)
+*/
+#identity-box.extensionPage #identity-icon-labels,
+#identity-box.extensionPage #identity-icon-label {
+  visibility: collapse !important;
+  transition: visibility 250ms ease-in-out;
+}
+#identity-box.extensionPage:hover #identity-icon-labels,
+#identity-box.extensionPage:hover #identity-icon-label {
+  visibility: visible !important;
+  transition: visibility 250ms ease-in-out 500ms;
+}
+
+#alltabs-button {
+    display: none !important;
+}
+
+#forward-button { display:none!important; }
+
+#star-button{
+	display:none;
+	}
+
+/* Small changes to make proton roughly as compact as the old compact mode */
+#unified-extensions-button { 
+  display: none !important; 
+  }
+
+:root{
+  --toolbarbutton-inner-padding: 6px !important;
+  --tab-block-margin: 2px !important;
+  --tabs-shadow-size: 0px !important;
+  --arrowpanel-menuitem-padding-block: 5px !important;
+  --panel-font-size: inherit !important;
+  --arrowpanel-padding: 0.8em !important;
+  --inline-tab-padding: 8px !important; /* 8px is default value since it looks good - lower values compactify tabs horizontally */
+}
+.subviewbutton.bookmark-item{ padding-block: 4px !important; }
+.subview-subheader{ display: block }
+menupopup > menuitem,
+menupopup > menu{ padding-block: 0.3em !important; }
+
+/* This is kinda weird, but it makes the horizontal line between tabs and nav-bar render "inside" nav-bar thus tabs are more visibily separated even if there is less space there */
+#nav-bar{ 
+  box-shadow: inset 0 var(--tabs-shadow-size) 0 var(--lwt-tabs-border-color) !important;
+}
+
+.tab-close-button{
+  margin-inline-start: 0px !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 5px !important;
+}
+
+#tabbrowser-tabs{ --uc-tabs-scrollbutton-border: 2px }
+#scrollbutton-up,
+#scrollbutton-down{ border-block-width: var(--uc-tabs-scrollbutton-border,0px) !important; }
+
+/* Show tab close button when cursor is over the tab icon */
+
+/* inline_tab_audio_icons.css is recommended because otherwise you cannot mute the tab using the mute button */
+
+/* inline_tab_audio_icons.css is recommended because otherwise you cannot mute the tab using the mute button */
+
+.tab-content{
+  pointer-events: none
+}
+.tab-icon-image:not([busy]){ display: block !important; }
+:where(.tab-content:hover) .tab-icon-image,
+:where(.tab-content:hover) > .tab-icon-stack{
+  visibility: hidden;
+}
+.tab-close-button{
+  order: -1;
+  display: flex !important;
+  position: relative;
+  margin-inline: -4px -20px !important;
+  padding-inline-start: 7px !important;
+  opacity: 0;
+  width: unset !important;
+  pointer-events: auto;
+}
+.tab-close-button:hover{ opacity: 1 }
+.tabbrowser-tab[pinned] .tab-close-button{ display: none !important; }
+
+/* Shows tab audio icons next to the tab icon, and by default removes the tab secondary line */
+
+.tabbrowser-tab:not([pinned]) .tab-icon-stack:is([muted],[soundplaying],[activemedia-blocked]){
+  grid-template-areas: "a s";
+}
+.tabbrowser-tab:not([pinned]) .tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]){ grid-area: s; }
+.tab-icon-overlay,
+.tab-icon-image,
+.tab-throbber{ opacity: 1 !important; }
+
+.tab-icon-overlay:not([pinned]){
+  padding: 0px !important;
+  margin-inline: -3px 1px !important;
+}
+
+/* secondary audio label ain't much use with this style, but feel free to remove the next line if you want to show it. */
+.tab-secondary-label{ display: none }
+
+/* show the secondary label when video is in PiP */
+.tab-secondary-label[pictureinpicture]{ display: flex }
+
+/* These exist for compatibility with combined_favicon_and_tab_close_button.css */
+.tab-icon-overlay{ pointer-events: auto }
+.tab-content > .tab-icon-stack,
+.tab-icon-stack:hover > .tab-icon-image{ visibility: visible }
+
+  /* ROOT - VARS */
+*|*:root {
+	--tab-min-height:      30px !important; /* adjust */
+	--tab-min-width:       60px !important; /* adjust */
+   }
+   
+   /* TABS: height */
+   #tabbrowser-tabs,
+   #tabbrowser-tabs > #tabbrowser-arrowscrollbox,
+   .tabbrowser-tabs .tabbrowser-tab {
+	 min-height: var(--tab-min-height) !important;
+	 max-height: var(--tab-min-height) !important;
+   }
+
+   /*  Removes rounding from the top corners,   */
+#navigator-toolbox{appearance: none !important; border-radius: 0 !important}
+#navigator-toolbox-background{background-color: Field !important; background-image: none !important;  appearance: none !important; border-radius: 0 !important}
+
