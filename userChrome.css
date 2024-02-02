@@ -1,3 +1,13 @@
+
+#titlebar{ margin-top: -1px }
+
+:root{ --tab-block-margin: 0 !important;  }
+#tabbrowser-tabs{ --uc-scrollbutton-margin: 0px }
+#scrollbutton-up,#scrollbutton-down{ border-block-width: var(--uc-scrollbutton-margin, 0px) !important; }
+.tabbrowser-tab{ padding-inline: 0 !important; }
+.tab-context-line{ display: none !important; }
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background{ border-block: 2px solid var(--identity-icon-color,transparent) !important; }
+
 .titlebar-buttonbox-container{ margin-left: 40px !important }
 :root {
   --uei-icon-size: 16px !important;
@@ -61,6 +71,9 @@
 #tabbrowser-tabs{border-inline-start-width: 0!important}
 
 /* This style hides the main toolbar and shows it when the cursor is over the tabs toolbar as well as whenever the focus is inside nav-bar, such as when urlbar is focused. */
+/* Why 100vw? Tab closing requires width animation to end and "none" can't be animated */
+.tabbrowser-tab[fadein]:not([style^="max-width"]){ max-width: 100vw !important }
+
 
 :root{ --uc-navbar-transform: -40px }
 :root[uidensity="compact"]{ --uc-navbar-transform: -34px }
@@ -76,7 +89,7 @@
 
 #nav-bar:not([customizing]){
   opacity: 0;
-  transition:  transform 500ms ease 1s, opacity 200ms ease 0.5s !important;
+  transition:  transform 100ms ease 0ms, opacity 100ms ease 0s !important;
   position: relative;
   z-index: 2;
 }
@@ -86,7 +99,7 @@
 #navigator-toolbox:focus-within > .browser-toolbar{
   transform: translateY(0);
   opacity: 1;
-  transition-duration: 100ms, 100ms !important;
+  transition-duration: 0ms, 0ms !important;
   transition-delay: 0s !important;
 }
 /* Show when toolbox is hovered */
@@ -100,7 +113,7 @@
 }
 
 /* Bookmarks toolbar needs so extra rules */
-#PersonalToolbar{ transition: transform 400ms ease 1.8s !important; position: relative; z-index: 1 }
+#PersonalToolbar{ transition: transform 100ms ease 0s !important; position: relative; z-index: 1 }
 
 /* Move up the content view */
 :root[sessionrestored]:not([inFullscreen]) > body > #browser{ margin-top: var(--uc-navbar-transform); }
@@ -131,9 +144,6 @@
 	}
 
 /* Small changes to make proton roughly as compact as the old compact mode */
-#unified-extensions-button { 
-  display: none !important; 
-  }
 
 :root{
   --toolbarbutton-inner-padding: 6px !important;
