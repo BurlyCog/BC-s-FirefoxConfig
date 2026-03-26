@@ -1,0 +1,197 @@
+/* deno-fmt-ignore */
+/* In Rainbows — Disk 2 palette for catppuccin userstyles */
+/* Drop-in replacement for https://userstyles.catppuccin.com/lib/lib.less */
+/* Usage: set @flavor: inrainbows; in each userstyle */
+
+@catppuccin: {
+  @inrainbows: {
+    /* accents — sampled from the album art */
+    @rosewater: #c9b89a; /* warm parchment */
+    @flamingo:  #b87b8e; /* muted rose */
+    @pink:      #b87b8e; /* same muted rose */
+    @mauve:     #9da8c7; /* dusty lavender */
+    @red:       #c45a2a; /* burnt orange-red */
+    @maroon:    #b85c4a; /* deeper maroon */
+    @peach:     #c45a2a; /* same burnt orange */
+    @yellow:    #c9a84c; /* warm mid-yellow */
+    @green:     #7a9e7e; /* muted sage */
+    @teal:      #4ab5c4; /* album's signature cyan */
+    @sky:       #4ab5c4; /* same cyan */
+    @sapphire:  #5b7fa6; /* dusty steel blue */
+    @blue:      #5b7fa6; /* same steel blue */
+    @lavender:  #9da8c7; /* cool lavender-grey */
+
+    /* text ramp — pale yellows to mids */
+    @text:      #e8dfa0; /* pale warm yellow — primary text */
+    @subtext1:  #c8c4a0; /* slightly muted yellow */
+    @subtext0:  #a0a8b8; /* cool grey */
+
+    /* overlay ramp */
+    @overlay2:  #7a8494;
+    @overlay1:  #6e7a8a;
+    @overlay0:  #5a6470;
+
+    /* surface ramp */
+    @surface2:  #48535f;
+    @surface1:  #36404a;
+    @surface0:  #2e3740;
+
+    /* base backgrounds — bluish blacks */
+    @base:      #0d1017; /* darkest — main bg */
+    @mantle:    #111519;
+    @crust:     #161c22;
+  };
+};
+
+/* ------------------------------------------------------------------ */
+/* CSS image filters for the @inrainbows palette                       */
+/* Generated via https://isotropic.co/tool/hex-color-to-css-filter/   */
+/* ------------------------------------------------------------------ */
+@catppuccin-filters: {
+  @inrainbows: {
+    @rosewater: brightness(0) saturate(100%) invert(76%) sepia(18%) saturate(412%) hue-rotate(10deg) brightness(103%) contrast(85%);
+    @flamingo:  brightness(0) saturate(100%) invert(54%) sepia(24%) saturate(520%) hue-rotate(295deg) brightness(95%) contrast(80%);
+    @pink:      brightness(0) saturate(100%) invert(54%) sepia(24%) saturate(520%) hue-rotate(295deg) brightness(95%) contrast(80%);
+    @mauve:     brightness(0) saturate(100%) invert(68%) sepia(18%) saturate(410%) hue-rotate(192deg) brightness(100%) contrast(85%);
+    @red:       brightness(0) saturate(100%) invert(40%) sepia(55%) saturate(800%) hue-rotate(10deg) brightness(95%) contrast(90%);
+    @maroon:    brightness(0) saturate(100%) invert(38%) sepia(40%) saturate(750%) hue-rotate(345deg) brightness(95%) contrast(85%);
+    @peach:     brightness(0) saturate(100%) invert(40%) sepia(55%) saturate(800%) hue-rotate(10deg) brightness(95%) contrast(90%);
+    @yellow:    brightness(0) saturate(100%) invert(66%) sepia(45%) saturate(650%) hue-rotate(5deg) brightness(100%) contrast(85%);
+    @green:     brightness(0) saturate(100%) invert(63%) sepia(20%) saturate(420%) hue-rotate(90deg) brightness(92%) contrast(80%);
+    @teal:      brightness(0) saturate(100%) invert(64%) sepia(50%) saturate(700%) hue-rotate(155deg) brightness(95%) contrast(85%);
+    @sky:       brightness(0) saturate(100%) invert(64%) sepia(50%) saturate(700%) hue-rotate(155deg) brightness(95%) contrast(85%);
+    @sapphire:  brightness(0) saturate(100%) invert(50%) sepia(28%) saturate(560%) hue-rotate(185deg) brightness(98%) contrast(80%);
+    @blue:      brightness(0) saturate(100%) invert(50%) sepia(28%) saturate(560%) hue-rotate(185deg) brightness(98%) contrast(80%);
+    @lavender:  brightness(0) saturate(100%) invert(68%) sepia(18%) saturate(410%) hue-rotate(192deg) brightness(100%) contrast(85%);
+    @text:      brightness(0) saturate(100%) invert(88%) sepia(22%) saturate(380%) hue-rotate(15deg) brightness(105%) contrast(88%);
+    @subtext1:  brightness(0) saturate(100%) invert(80%) sepia(16%) saturate(340%) hue-rotate(18deg) brightness(102%) contrast(82%);
+    @subtext0:  brightness(0) saturate(100%) invert(70%) sepia(10%) saturate(320%) hue-rotate(190deg) brightness(100%) contrast(78%);
+    @overlay2:  brightness(0) saturate(100%) invert(58%) sepia(12%) saturate(310%) hue-rotate(190deg) brightness(90%) contrast(72%);
+    @overlay1:  brightness(0) saturate(100%) invert(52%) sepia(14%) saturate(300%) hue-rotate(192deg) brightness(85%) contrast(68%);
+    @overlay0:  brightness(0) saturate(100%) invert(44%) sepia(14%) saturate(290%) hue-rotate(192deg) brightness(80%) contrast(65%);
+    @surface2:  brightness(0) saturate(100%) invert(36%) sepia(18%) saturate(320%) hue-rotate(190deg) brightness(65%) contrast(68%);
+    @surface1:  brightness(0) saturate(100%) invert(26%) sepia(18%) saturate(310%) hue-rotate(192deg) brightness(52%) contrast(70%);
+    @surface0:  brightness(0) saturate(100%) invert(20%) sepia(22%) saturate(340%) hue-rotate(194deg) brightness(45%) contrast(72%);
+    @base:      brightness(0) saturate(100%) invert(6%)  sepia(28%) saturate(800%) hue-rotate(200deg) brightness(40%) contrast(90%);
+    @mantle:    brightness(0) saturate(100%) invert(7%)  sepia(25%) saturate(700%) hue-rotate(200deg) brightness(35%) contrast(90%);
+    @crust:     brightness(0) saturate(100%) invert(9%)  sepia(22%) saturate(650%) hue-rotate(200deg) brightness(45%) contrast(88%);
+  };
+};
+
+/* ------------------------------------------------------------------ */
+/* lib mixins — identical to the official catppuccin lib.less          */
+/* ------------------------------------------------------------------ */
+
+#lib {
+  .palette() {
+    @rosewater: @catppuccin[@@flavor][@rosewater];
+    @flamingo:  @catppuccin[@@flavor][@flamingo];
+    @pink:      @catppuccin[@@flavor][@pink];
+    @mauve:     @catppuccin[@@flavor][@mauve];
+    @red:       @catppuccin[@@flavor][@red];
+    @maroon:    @catppuccin[@@flavor][@maroon];
+    @peach:     @catppuccin[@@flavor][@peach];
+    @yellow:    @catppuccin[@@flavor][@yellow];
+    @green:     @catppuccin[@@flavor][@green];
+    @teal:      @catppuccin[@@flavor][@teal];
+    @sky:       @catppuccin[@@flavor][@sky];
+    @sapphire:  @catppuccin[@@flavor][@sapphire];
+    @blue:      @catppuccin[@@flavor][@blue];
+    @lavender:  @catppuccin[@@flavor][@lavender];
+    @text:      @catppuccin[@@flavor][@text];
+    @subtext1:  @catppuccin[@@flavor][@subtext1];
+    @subtext0:  @catppuccin[@@flavor][@subtext0];
+    @overlay2:  @catppuccin[@@flavor][@overlay2];
+    @overlay1:  @catppuccin[@@flavor][@overlay1];
+    @overlay0:  @catppuccin[@@flavor][@overlay0];
+    @surface2:  @catppuccin[@@flavor][@surface2];
+    @surface1:  @catppuccin[@@flavor][@surface1];
+    @surface0:  @catppuccin[@@flavor][@surface0];
+    @base:      @catppuccin[@@flavor][@base];
+    @mantle:    @catppuccin[@@flavor][@mantle];
+    @crust:     @catppuccin[@@flavor][@crust];
+    @accent:    @catppuccin[@@flavor][@@accentColor];
+
+    @rosewater-filter: @catppuccin-filters[@@flavor][@rosewater];
+    @flamingo-filter:  @catppuccin-filters[@@flavor][@flamingo];
+    @pink-filter:      @catppuccin-filters[@@flavor][@pink];
+    @mauve-filter:     @catppuccin-filters[@@flavor][@mauve];
+    @red-filter:       @catppuccin-filters[@@flavor][@red];
+    @maroon-filter:    @catppuccin-filters[@@flavor][@maroon];
+    @peach-filter:     @catppuccin-filters[@@flavor][@peach];
+    @yellow-filter:    @catppuccin-filters[@@flavor][@yellow];
+    @green-filter:     @catppuccin-filters[@@flavor][@green];
+    @teal-filter:      @catppuccin-filters[@@flavor][@teal];
+    @sky-filter:       @catppuccin-filters[@@flavor][@sky];
+    @sapphire-filter:  @catppuccin-filters[@@flavor][@sapphire];
+    @blue-filter:      @catppuccin-filters[@@flavor][@blue];
+    @lavender-filter:  @catppuccin-filters[@@flavor][@lavender];
+    @text-filter:      @catppuccin-filters[@@flavor][@text];
+    @subtext1-filter:  @catppuccin-filters[@@flavor][@subtext1];
+    @subtext0-filter:  @catppuccin-filters[@@flavor][@subtext0];
+    @overlay2-filter:  @catppuccin-filters[@@flavor][@overlay2];
+    @overlay1-filter:  @catppuccin-filters[@@flavor][@overlay1];
+    @overlay0-filter:  @catppuccin-filters[@@flavor][@overlay0];
+    @surface2-filter:  @catppuccin-filters[@@flavor][@surface2];
+    @surface1-filter:  @catppuccin-filters[@@flavor][@surface1];
+    @surface0-filter:  @catppuccin-filters[@@flavor][@surface0];
+    @base-filter:      @catppuccin-filters[@@flavor][@base];
+    @mantle-filter:    @catppuccin-filters[@@flavor][@mantle];
+    @crust-filter:     @catppuccin-filters[@@flavor][@crust];
+    @accent-filter:    @catppuccin-filters[@@flavor][@@accentColor];
+  }
+
+  .defaults() {
+    color-scheme: dark;
+
+    ::selection {
+      background-color: fade(@accent, 30%);
+    }
+
+    input,
+    textarea {
+      &::placeholder {
+        color: @subtext0 !important;
+      }
+    }
+  }
+
+  .rgbify(@color) {
+    @rgb: red(@color), green(@color), blue(@color);
+  }
+
+  .hslify(@color) {
+    @raw: e(
+      %("%s, %s%, %s%", hue(@color), saturation(@color), lightness(@color))
+    );
+  }
+
+  .css-variables() {
+    --ctp-rosewater: @rosewater;
+    --ctp-flamingo:  @flamingo;
+    --ctp-pink:      @pink;
+    --ctp-mauve:     @mauve;
+    --ctp-red:       @red;
+    --ctp-maroon:    @maroon;
+    --ctp-peach:     @peach;
+    --ctp-yellow:    @yellow;
+    --ctp-green:     @green;
+    --ctp-teal:      @teal;
+    --ctp-sky:       @sky;
+    --ctp-sapphire:  @sapphire;
+    --ctp-blue:      @blue;
+    --ctp-lavender:  @lavender;
+    --ctp-text:      @text;
+    --ctp-subtext1:  @subtext1;
+    --ctp-subtext0:  @subtext0;
+    --ctp-overlay2:  @overlay2;
+    --ctp-overlay1:  @overlay1;
+    --ctp-overlay0:  @overlay0;
+    --ctp-surface2:  @surface2;
+    --ctp-surface1:  @surface1;
+    --ctp-surface0:  @surface0;
+    --ctp-base:      @base;
+    --ctp-mantle:    @mantle;
+    --ctp-crust:     @crust;
+  }
+}
