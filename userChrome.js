@@ -1,3 +1,4 @@
+console.log("REMOTE SCRIPT RUNNING");
 (() => {
     const screen = document.getElementById("screen");
 
