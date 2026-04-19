@@ -1,4 +1,25 @@
-console.log("REMOTE SCRIPT RUNNING");
+// === TEST SCRIPT ===
+console.log("REMOTE JS LOADED");
+
+// Change background (overrides your CSS)
+document.body.style.background = "#003366";
+
+// Write visible text
+const screen = document.getElementById("screen");
+
+if (screen) {
+    screen.textContent = "JS LOADED SUCCESSFULLY";
+} else {
+    const fallback = document.createElement("div");
+    fallback.textContent = "JS LOADED (NO #screen FOUND)";
+    fallback.style.color = "white";
+    fallback.style.fontFamily = "monospace";
+    fallback.style.position = "fixed";
+    fallback.style.top = "50%";
+    fallback.style.left = "50%";
+    fallback.style.transform = "translate(-50%, -50%)";
+    document.body.appendChild(fallback);
+}console.log("REMOTE SCRIPT RUNNING");
 (() => {
     const screen = document.getElementById("screen");
 
