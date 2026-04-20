@@ -82,19 +82,23 @@
   }
 
   .defaults() {
-    color-scheme: if(@flavor = latte, light, dark);
+  color-scheme: if(
+    (@flavor = latte) or (@flavor = riverbloomlight),
+    light,
+    dark
+  );
 
-    ::selection {
-      background-color: fade(@accent, 30%);
-    }
+  ::selection {
+    background-color: fade(@accent, 30%);
+  }
 
-    input,
-    textarea {
-      &::placeholder {
-        color: @subtext0 !important;
-      }
+  input,
+  textarea {
+    &::placeholder {
+      color: @subtext0 !important;
     }
   }
+}
 
   .rgbify(@color) {
     @rgb: red(@color), green(@color), blue(@color);
