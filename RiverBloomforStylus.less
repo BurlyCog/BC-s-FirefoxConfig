@@ -1,32 +1,32 @@
 //riverbloom theme. mocha is medium, macchiato is dark, latte is light, frappe does nothing.
 @catppuccin: {
     @latte: {
-        @rosewater: #212121;
-        @flamingo: #292929;
-        @pink: #303030;
-        @mauve: #333333;
-        @red: #B82E2E;
-        @maroon: #F16424;
-        @peach: #D28500;
-        @yellow: #B39000;
-        @green: #327656;
-        @teal: #3F7F73;
-        @sky: #2C808C;
-        @sapphire: #3F7F8C;
-        @blue: #4F6FBF;
-        @lavender: #7566A8;
-        @text: #1C1C1C;
-        @subtext1: #404040;
-        @subtext0: #666666;
-        @overlay2: #777777;
-        @overlay1: #888888;
-        @overlay0: #999999;
-        @surface2: #A6A6A6;
-        @surface1: #B0B0B0;
-        @surface0: #B8B8B8;
-        @base: #D0D0D0;
-        @mantle: #C7C7C7;
-        @crust: #b9b8b8;
+        @rosewater: #C47A72; 
+        @flamingo: #B96868; 
+        @pink: #A13879; 
+        @mauve: #8C4D96; 
+        @red: #AA3838; 
+        @maroon: #C04B4B; 
+        @peach: #BA6C23; 
+        @yellow: #B59433; 
+        @green: #217852; 
+        @teal: #27817C; 
+        @sky: #2197A9; 
+        @sapphire: #3186A4; 
+        @blue: #296AA4; 
+        @lavender: #555A9C; 
+        @text: #454545; 
+        @subtext1: ##515151; 
+        @subtext0: ##616161; 
+        @overlay2: ##717171; 
+        @overlay1: ##808080; 
+        @overlay0: ##909090; 
+        @surface2: ##A1A1A1; 
+        @surface1: ##B0B0B0; 
+        @surface0: ##C0C0C0; 
+        @base: ##DADADA; 
+        @mantle: ##D3D3D3; 
+        @crust: ##C4C4C4;
     }
     ;
 
@@ -61,32 +61,32 @@
     ;
 
     @mocha: {
-        @rosewater: #DEDEDE;
-        @flamingo: #D6D6D6;
-        @pink: #CFCFCF;
-        @mauve: #CCCCCC;
-        @red: #F66355;
-        @maroon: #ED905E;
-        @peach: #EBBC47;
-        @yellow: #F8E159;
-        @green: #72C076;
-        @teal: #BFBFBF;
-        @sky: #A7DDE5;
-        @sapphire: #B8B8B8;
-        @blue: #5EA4ED;
-        @lavender: #C7C7C7;
-        @text: #E3E3E3;
-        @subtext1: #BFBFBF;
-        @subtext0: #A6A6A6;
-        @overlay2: #474747;
-        @overlay1: #404040;
-        @overlay0: #383838;
-        @surface2: #303030;
-        @surface1: #292929;
-        @surface0: #252525;
-        @base: #202020;
-        @mantle: #151515;
-        @crust: #101010;
+        @rosewater: #EDAB9E; 
+        @flamingo: #E795A7; 
+        @pink: #F7B4E4; 
+        @mauve: #B392F0; 
+        @red: #F66355; 
+        @maroon: #ED905E; 
+        @peach: #EBBC47; 
+        @yellow: #F8E159; 
+        @green: #72C076; 
+        @teal: #67EAE1; 
+        @sky: #62D6EB; 
+        @sapphire: #5FC3F0; 
+        @blue: #5EA4ED; 
+        @lavender: #C4B1FE; 
+        @text: #D7D7D7; 
+        @subtext1: #C3C3C3; 
+        @subtext0: #AEAEAE; 
+        @overlay2: #9A9A9A; 
+        @overlay1: #858585; 
+        @overlay0: #717171; 
+        @surface2: #5C5C5C; 
+        @surface1: #484848; 
+        @surface0: #343434; 
+        @base: #202020; 
+        @mantle: #191919; 
+        @crust: #121212;
     }
     ;
 }
@@ -95,38 +95,38 @@
 /* deno-fmt-ignore */
 @catppuccin-filters: {
     @latte: {
-        @rosewater: brightness(0) saturate(100%) invert(12%) sepia(2%) brightness(100%) contrast(74%);
-        @flamingo: brightness(0) saturate(100%) invert(16%) sepia(7%) brightness(102%) contrast(236%);
-        @pink: brightness(0) saturate(100%) invert(19%) sepia(61%) brightness(100%) contrast(62%);
-        @mauve: brightness(0) saturate(100%) invert(20%) sepia(58%) brightness(100%) contrast(60%);
-    
-        @red: brightness(0) saturate(100%) invert(17%) sepia(25%) saturate(589%) hue-rotate(311deg) brightness(40%) contrast(244%);
-        @maroon: brightness(0) saturate(100%) invert(36%) sepia(68%) saturate(719%) hue-rotate(334deg) brightness(43%) contrast(88%);
-        @peach: brightness(0) saturate(100%) invert(18%) sepia(84%) saturate(800%) hue-rotate(1deg) brightness(48%) contrast(68%);
-        @yellow: brightness(0) saturate(100%) invert(61%) sepia(44%) saturate(756%) hue-rotate(15deg) brightness(47%) contrast(200%);
-        @green: brightness(0) saturate(100%) invert(33%) sepia(99%) saturate(632%) hue-rotate(99deg) brightness(23%) contrast(47%);
-    
-        @teal: brightness(0) saturate(100%) invert(45%) sepia(74%) saturate(507%) hue-rotate(119deg) brightness(33%) contrast(51%);
-        @sky: brightness(0) saturate(100%) invert(43%) sepia(91%) saturate(501%) hue-rotate(139deg) brightness(33%) contrast(61%);
-        @sapphire: brightness(0) saturate(100%) invert(71%) sepia(72%) saturate(639%) hue-rotate(143deg) brightness(34%) contrast(47%);
-        @blue: brightness(0) saturate(100%) invert(74%) sepia(58%) saturate(338%) hue-rotate(185deg) brightness(40%) contrast(140%);
-        @lavender: brightness(0) saturate(100%) invert(62%) sepia(60%) saturate(871%) hue-rotate(213deg) brightness(31%) contrast(46%);
-    
-        @text: brightness(0) saturate(100%) invert(11%) sepia(0%) brightness(100%) contrast(78%);
-        @subtext1: brightness(0) saturate(100%) invert(25%) sepia(0%) brightness(107%) contrast(58%);
-        @subtext0: brightness(0) saturate(100%) invert(40%) sepia(0%) brightness(108%) contrast(24%);
-    
-        @overlay2: brightness(0) saturate(100%) invert(47%) sepia(0%) brightness(98%) contrast(12%);
-        @overlay1: brightness(0) saturate(100%) invert(53%) sepia(0%) brightness(106%) contrast(6%);
-        @overlay0: brightness(0) saturate(100%) invert(60%) sepia(0%) brightness(100%) contrast(26%);
-    
-        @surface2: brightness(0) saturate(100%) invert(65%) sepia(0%) brightness(195%) contrast(9%);
-        @surface1: brightness(0) saturate(100%) invert(63%) sepia(2%) brightness(200%) contrast(13%);
-        @surface0: brightness(0) saturate(100%) invert(72%) sepia(0%) brightness(83%) contrast(68%);
-    
-        @base: brightness(0) saturate(100%) invert(53%) sepia(1%) brightness(129%) contrast(40%);
-        @mantle: brightness(0) saturate(100%) invert(51%) sepia(0%) brightness(100%) contrast(56%);
-        @crust: brightness(0) saturate(100%) invert(21%) sepia(18%) saturate(17%) hue-rotate(311deg) brightness(134%) contrast(25%);
+    @rosewater: brightness(0) saturate(100%) invert(51%) sepia(25%) saturate(700%) hue-rotate(325deg) brightness(86%) contrast(88%);
+    @flamingo:  brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(850%) hue-rotate(320deg) brightness(86%) contrast(90%);
+    @pink:      brightness(0) saturate(100%) invert(27%) sepia(70%) saturate(900%) hue-rotate(310deg) brightness(80%) contrast(90%);
+    @mauve:     brightness(0) saturate(100%) invert(32%) sepia(35%) saturate(1100%) hue-rotate(250deg) brightness(75%) contrast(90%);
+
+    @red:       brightness(0) saturate(100%) invert(28%) sepia(70%) saturate(1300%) hue-rotate(330deg) brightness(72%) contrast(95%);
+    @maroon:    brightness(0) saturate(100%) invert(36%) sepia(55%) saturate(1100%) hue-rotate(335deg) brightness(78%) contrast(90%);
+    @peach:     brightness(0) saturate(100%) invert(43%) sepia(80%) saturate(1100%) hue-rotate(355deg) brightness(78%) contrast(92%);
+    @yellow:    brightness(0) saturate(100%) invert(62%) sepia(55%) saturate(900%) hue-rotate(15deg) brightness(78%) contrast(92%);
+
+    @green:     brightness(0) saturate(100%) invert(40%) sepia(55%) saturate(700%) hue-rotate(105deg) brightness(65%) contrast(90%);
+    @teal:      brightness(0) saturate(100%) invert(40%) sepia(55%) saturate(600%) hue-rotate(125deg) brightness(68%) contrast(90%);
+    @sky:       brightness(0) saturate(100%) invert(52%) sepia(65%) saturate(700%) hue-rotate(145deg) brightness(78%) contrast(90%);
+    @sapphire:  brightness(0) saturate(100%) invert(50%) sepia(65%) saturate(800%) hue-rotate(160deg) brightness(78%) contrast(90%);
+    @blue:      brightness(0) saturate(100%) invert(46%) sepia(65%) saturate(900%) hue-rotate(175deg) brightness(75%) contrast(92%);
+    @lavender:  brightness(0) saturate(100%) invert(36%) sepia(45%) saturate(1000%) hue-rotate(210deg) brightness(75%) contrast(90%);
+
+    @text:      brightness(0) saturate(100%) invert(27%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(72%) contrast(90%);
+    @subtext1:  brightness(0) saturate(100%) invert(31%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(75%) contrast(88%);
+    @subtext0:  brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(76%) contrast(85%);
+
+    @overlay2: brightness(0) saturate(100%) invert(44%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(80%) contrast(82%);
+    @overlay1: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(82%) contrast(80%);
+    @overlay0: brightness(0) saturate(100%) invert(56%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(84%) contrast(78%);
+
+    @surface2: brightness(0) saturate(100%) invert(63%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(86%) contrast(76%);
+    @surface1: brightness(0) saturate(100%) invert(69%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(88%) contrast(74%);
+    @surface0: brightness(0) saturate(100%) invert(75%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(72%);
+
+    @base:   brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(92%) contrast(70%);
+    @mantle: brightness(0) saturate(100%) invert(82%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(91%) contrast(70%);
+    @crust:  brightness(0) saturate(100%) invert(76%) sepia(0%) saturate(0%) hue-rotate(0deg)
     }
     ;
 
@@ -161,32 +161,38 @@
     ;
 
     @mocha: {
-        @rosewater: brightness(0) saturate(100%) invert(87%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(128%) contrast(100%);
-        @flamingo: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(126%) contrast(100%);
-        @pink: brightness(0) saturate(100%) invert(81%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(122%) contrast(100%);
-        @mauve: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(120%) contrast(100%);
-        @red: brightness(0) saturate(100%) invert(62%) sepia(72%) saturate(1100%) hue-rotate(3deg) brightness(118%) contrast(90%);
-        @maroon: brightness(0) saturate(100%) invert(62%) sepia(60%) saturate(950%) hue-rotate(18deg) brightness(120%) contrast(88%);
-        @peach: brightness(0) saturate(100%) invert(58%) sepia(65%) saturate(1000%) hue-rotate(40deg) brightness(120%) contrast(88%);
-        @yellow: brightness(0) saturate(100%) invert(64%) sepia(76%) saturate(1100%) hue-rotate(49deg) brightness(122%) contrast(85%);
-        @green: brightness(0) saturate(100%) invert(60%) sepia(30%) saturate(520%) hue-rotate(120deg) brightness(118%) contrast(88%);
-        @teal: brightness(0) saturate(100%) invert(75%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(128%) contrast(100%);
-        @sky: brightness(0) saturate(100%) invert(78%) sepia(42%) saturate(700%) hue-rotate(185deg) brightness(122%) contrast(88%);
-        @sapphire: brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(126%) contrast(100%);
-        @blue: brightness(0) saturate(100%) invert(60%) sepia(60%) saturate(950%) hue-rotate(208deg) brightness(118%) contrast(88%);
-        @lavender: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(128%) contrast(100%);
-        @text: brightness(0) saturate(100%) invert(89%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(128%) contrast(100%);
-        @subtext1: brightness(0) saturate(100%) invert(75%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(128%) contrast(100%);
-        @subtext0: brightness(0) saturate(100%) invert(65%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(120%) contrast(100%);
-        @overlay2: brightness(0) saturate(100%) invert(35%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
-        @overlay1: brightness(0) saturate(100%) invert(31%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(96%) contrast(100%);
-        @overlay0: brightness(0) saturate(100%) invert(28%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(92%) contrast(100%);
-        @surface2: brightness(0) saturate(100%) invert(25%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(88%) contrast(100%);
-        @surface1: brightness(0) saturate(100%) invert(22%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(84%) contrast(100%);
-        @surface0: brightness(0) saturate(100%) invert(19%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(81%) contrast(100%);
-        @base: brightness(0) saturate(100%) invert(16%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(77%) contrast(100%);
-        @mantle: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(74%) contrast(100%);
-        @crust: brightness(0) saturate(100%) invert(11%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(71%) contrast(100%);
+    @rosewater: brightness(0) saturate(100%) invert(73%) sepia(25%) saturate(600%) hue-rotate(320deg) brightness(105%) contrast(92%);
+    @flamingo:  brightness(0) saturate(100%) invert(69%) sepia(28%) saturate(700%) hue-rotate(320deg) brightness(105%) contrast(92%);
+    @pink:      brightness(0) saturate(100%) invert(80%) sepia(25%) saturate(700%) hue-rotate(310deg) brightness(108%) contrast(95%);
+    @mauve:     brightness(0) saturate(100%) invert(68%) sepia(35%) saturate(1000%) hue-rotate(245deg) brightness(105%) contrast(95%);
+
+    @red:       brightness(0) saturate(100%) invert(48%) sepia(65%) saturate(1500%) hue-rotate(325deg) brightness(108%) contrast(98%);
+    @maroon:    brightness(0) saturate(100%) invert(63%) sepia(55%) saturate(1100%) hue-rotate(330deg) brightness(108%) contrast(95%);
+    @peach:     brightness(0) saturate(100%) invert(69%) sepia(55%) saturate(1100%) hue-rotate(345deg) brightness(108%) contrast(95%);
+    @yellow:    brightness(0) saturate(100%) invert(82%) sepia(50%) saturate(1000%) hue-rotate(15deg) brightness(108%) contrast(95%);
+
+    @green:     brightness(0) saturate(100%) invert(70%) sepia(35%) saturate(850%) hue-rotate(105deg) brightness(100%) contrast(95%);
+    @teal:      brightness(0) saturate(100%) invert(83%) sepia(55%) saturate(800%) hue-rotate(125deg) brightness(105%) contrast(95%);
+    @sky:       brightness(0) saturate(100%) invert(79%) sepia(55%) saturate(900%) hue-rotate(150deg) brightness(105%) contrast(95%);
+    @sapphire:  brightness(0) saturate(100%) invert(74%) sepia(60%) saturate(1000%) hue-rotate(165deg) brightness(105%) contrast(95%);
+    @blue:      brightness(0) saturate(100%) invert(68%) sepia(60%) saturate(1100%) hue-rotate(180deg) brightness(108%) contrast(95%);
+    @lavender:  brightness(0) saturate(100%) invert(75%) sepia(35%) saturate(900%) hue-rotate(210deg) brightness(108%) contrast(95%);
+
+    @text:      brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(105%) contrast(90%);
+    @subtext1:  brightness(0) saturate(100%) invert(76%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(90%);
+    @subtext0:  brightness(0) saturate(100%) invert(68%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(96%) contrast(90%);
+
+    @overlay2: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(92%) contrast(88%);
+    @overlay1: brightness(0) saturate(100%) invert(52%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(88%);
+    @overlay0: brightness(0) saturate(100%) invert(44%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(88%) contrast(88%);
+
+    @surface2: brightness(0) saturate(100%) invert(36%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(86%) contrast(90%);
+    @surface1: brightness(0) saturate(100%) invert(28%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(84%) contrast(92%);
+    @surface0: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(82%) contrast(94%);
+
+    @base:   brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(80%) contrast(96%);
+    @mantle: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(78%) contrast(98%);
+    @crust:  brightness(0) saturate(100%) invert(7%) sepia(0%) saturate(0%) hue-rotate(0deg) 
     }
     ;
 }
